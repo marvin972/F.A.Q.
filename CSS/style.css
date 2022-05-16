@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+    
+}
+body{
+    background: linear-gradient(#AF67E9,#6565E7); 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.imgPc{
+    display: none;
+}
+header img {
+    width: 60%;
+    position: absolute;
+}
+.ombre{
+    margin-top: 28%;
+    position: absolute;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 40px;
+    
+}
+
+.containerFaq{
+    background-color: rgb(251, 251, 251);
+    margin-top: 27%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 140px;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 35%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.titre {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.desc{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 300;
+    display: none;
+    margin: 10px;
+}
+
+.toggle {
+    border: none;
+    background-color: inherit;
+    padding-left: 30px;
+    
+}
+.titreBtn1,.titreBtn2,.titreBtn3,.titreBtn4,.titreBtn5{
+    display: flex;
+    cursor: pointer;
+}
+
+.border{
+    border-bottom: 1px solid #E7E7E9;;
+    margin-top: 1em;
+}
+.affiche .desc {
+    display: block;
+  }
+  .affiche h2 {
+    font-weight: 700;
+  }
+  .affiche button img {
+    transform: rotate(180deg);
+  }
+  span{
+      visibility: hidden;
+  }
+
+  @media (min-width: 550px ) {
+      header img, .ombre{
+          display: none;
+      }
+    
+      .imgPc,.ombrePc{
+          margin-top: 5%;
+          display: flex;
+          width: 150vh;
+          position:absolute ;
+          padding-right: 20%;
+      }
+     .ombrePc{
+         margin-top: -10%;
+         padding-right: 72%;
+         width: 220vh;
+     }
+      .containerFaq{
+          display: flex;
+        
+      }
+      .sectionFaq{
+          width: 100%;
+      }
+      .sectionContainer{
+          display: flex;
+          flex-direction: column;
+          margin-left: 30%;
+          padding-left: 30%;
+          width: 100%;
+          margin-right: 3%;
+      }
+      
+      span {
+          visibility: hidden;
+      }
+      .affiche .desc {
+        display: block;
+      }
+      .affiche h2 {
+        font-weight: 700;
+      }
+      .affiche button img {
+        transform: rotate(180deg);
+      }
+  }
